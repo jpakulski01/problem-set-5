@@ -190,6 +190,33 @@ function hurricane() {
   let windspeed; // DO NOT MODIFY
   ///////////////// DO NOT MODIFY
 
+windspeed=Number(prompt("Enter the wind speed of the storm."));
+while (windspeed<0.0){
+  windspeed=Number(prompt("Enter the wind speed of the storm as a non-negative integer."));
+}
+
+if (windspeed >= 157) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Category 5 Hurricane.";
+} else if (windspeed >= 130 && windspeed <= 156) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Category 4 Hurricane.";
+} else if (129 >= windspeed && windspeed >= 111) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Category 3 Hurricane.";
+} else if (110 >= windspeed && windspeed >= 96) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Category 2 Hurricane.";
+} else if (95 >= windspeed && windspeed >= 74) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Category 1 Hurricane.";
+} else if (73 >= windspeed && windspeed >= 39) {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "Tropical Storm.";
+} else {
+  document.getElementById(id="hurricane-output").innerHTML =
+  "The skies are calm...";
+}
   ///////////////////////////////// DO NOT MODIFY
   check('hurricane', windspeed); // DO NOT MODIFY
   ///////////////////////////////// DO NOT MODIFY
