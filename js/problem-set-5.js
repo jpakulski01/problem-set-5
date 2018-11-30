@@ -236,7 +236,7 @@ if (windspeed >= 157) {
  * As always, certain portions of the starter code are critical to the
  * the feedback script. Please do not modify these sections. They are
  * clearly marked.
- *
+ *+
  * All output should be displayed on the page, not printed to the console.
  */
 
@@ -251,7 +251,49 @@ function gymnastics() {
    * NOTE: The 'total' variable should be representative of the sum of all
    *       six of the judges' scores.
    */
+scoreOne=Number(prompt("Enter your first score."));
 
+while (scoreOne>10.0 && scoreOne<0.0) {
+  scoreOne=Number(prompt("Re-enter your first score as an integer that is between 10.0 and 0.0."));
+}
+
+scoreTwo=Number(prompt("Enter your second score."));
+
+while (scoreTwo>10.0 && scoreTwo<0.0) {
+  scoreTwo=Number(prompt("Re-enter your second score as an integer that is between 10.0 and 0.0."));
+}
+
+scoreThree=Number(prompt("Enter your third score."));
+
+while (scoreThree>10.0 && scoreThree<0.0) {
+  scoreThree=Number(prompt("Re-enter your third score as an integer that is between 10.0 and 0.0."));
+}
+
+scoreFour=Number(prompt("Enter your fourth score."));
+
+while (scoreFour>10.0 && scoreFour<0.0) {
+  scoreFour=Number(prompt("Re-enter your fourth score as an integer that is between 10.0 and 0.0."));
+}
+
+scoreFive=Number(prompt("Enter your fifth score."));
+
+while (scoreFive>10.0 && scoreFive<0.0) {
+  scoreFive=Number(prompt("Re-enter your fifth score as an integer that is between 10.0 and 0.0."));
+}
+
+scoreSix=Number(prompt("Enter your sixth score."));
+
+while (scoreSix>10.0 && scoreSix<0.0) {
+  scoreSix=Number(prompt("Re-enter your sixth score as an integer that is between 10.0 and 0.0."));
+}
+
+scores.push(firstScore)
+
+highestScore=scores.indexOf(Math.max(scoreOne, scoreTwo, scoreThree, scoreFour, scoreFive, scoreSix))
+
+lowestScore=scores.indexOf(Math.min(scoreOne, scoreTwo, scoreThree, scoreFour, scoreFive, scoreSix))
+
+average=Math.average()
   /*
    * NOTE: You need to add each score (valid or not) to the 'scores' variable.
    *       To do this, use the following syntax:
